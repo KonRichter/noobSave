@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  margin-bottom: 2vh;
+}
+
+
+#german-flag {
+  width: 60px;
+}
+
+#logo {
+  width: 200px;
+}
+
+h2 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: "DM Serif Display";
+  padding: 0px;
+  margin: 0px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20vw;
+}
+
+img {
+  margin-left: 2vw;
+  cursor: pointer;
+
+}
+
+.right {
+  width: 20vw;
+}
+
+.dontMove {
+  width: 50px;
+  visibility: hidden;
+}
+
+.move {
+  position: relative;
+  width: 80px;
+  animation: pretzelMove 6s normal linear;
+  z-index: 20;
+}
+
+.beerMove {
+  position: relative;
+  width: 80px;
+  animation: beerMoving 6s normal linear;
+  z-index: 20;
+}
+
+@keyframes pretzelMove {
+  0% {
+    top: 0px;
+    right: 1000px;
+  }
+  100% {
+    top: 1300px;
+    right: -500px;
+  }
+}
+
+@keyframes beerMoving {
+  0% {
+    top: 0px;
+    right: 0px;
+  }
+  100% {
+    top: 2000px;
+    right: 2000px;
+  }
+}
